@@ -148,12 +148,12 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/WebGLBuild.loader.js'
+                    unityLoader.src = 'Build/HideSeek-VK.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/fc812de104f9f27b43ba4f28d82016c1.data.unityweb',
+                                dataUrl: 'Build/445ac41d6dd347bff74541719d7d553b.data.unityweb',
                                 frameworkUrl: 'Build/cc1452e5050d2e6ed774630a6ac1b7cd.js.unityweb',
                                 codeUrl: 'Build/8917a7a9b12d50ca9bcb6667f3bb5a33.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
